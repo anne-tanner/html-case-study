@@ -1,0 +1,298 @@
+/*  Ein Kommentar in CSS */
+
+/*  Der * definiert den "global reset" Hier werden alle Elemente angesprochen, die später nicht anders definiert werden. */
+*
+{
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-size:100%;
+}
+
+
+html,body
+{
+	height:100%;
+}
+
+body 
+{
+	background:#191919;
+	color:#c3c3c3;
+	margin:0px;
+}
+
+#wrapper
+{
+	max-width: 1200px;
+	background:#3f3f3f;
+	margin: auto;
+}
+
+/* -------------------------- ANFANG HEADER ------------------------*/
+#header
+{
+	margin: auto;
+	text-align: center;
+	padding:40px;
+	padding-bottom: 0;
+}
+
+h1
+{
+	font-family: 'Bodoni Moda', serif;
+	font-size: 250%;
+	margin-bottom: 0px;
+}
+
+h3
+{
+	font-size: 130%;
+	margin-top: 0px;
+	font-family: 'Bodoni Moda', serif;
+}
+/* -------------------------- ENDE HEADER -----------------------------*/
+
+#zwei
+{
+	height: 40px;
+}
+/* -------------------------- ANFANG NAVI ---------------------------*/
+.navi
+{
+	height:50px;
+	width:50%;
+	margin:auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.navipunkt
+{
+	font-size: 150%;
+}
+/* -------------------------- ENDE NAVI -------------------------------*/
+
+/* ----------------------ANFANG HEADERBILD-------------------*/
+/* Box Panoramabild Indexseite */
+#drei
+{
+	margin-top: 15px;
+	position: relative;
+}
+/* ----------------------ENDE HEADERBILD----------------------*/
+
+
+
+
+/* --------------------- ANFANG CONTENT ---------------------*/
+
+/* ------------ Unser Hotel --------------*/
+
+
+.indextext
+{
+	width:75%;
+	margin:auto;
+	font-size: 120%;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 40px;
+}
+
+.text-überschrift
+{
+	font-family: 'Bodoni Moda', serif;
+	font-size: 200%;
+	padding:10px;
+}
+
+#index-pics-box
+{
+	width:95%;
+	margin:auto;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+}
+
+.index-pics
+{
+	width:350px;
+	height:400px;
+	margin-bottom: 20px;
+}
+
+
+/* ------------ Über Uns --------------*/
+
+
+#about-pics-box
+{
+	width:65%;
+	margin:auto;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-bottom: 50px;
+}
+
+.about-pics
+{
+	height:250px;
+	width:210px;
+	text-align: center;
+	font-size: 120%;
+}
+/* --------------Subsite Pics ANFANG ---------*/
+#subsite-pics-box
+{
+	width:95%;
+	margin:auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-bottom: 50px;
+}
+
+.subsite-pics
+{
+	height:360px;
+	width: 500px;
+	margin-bottom: 50px;
+	font-size: 120%;
+	text-align: center;
+}
+
+/* ------------------------- Anfang GALERIE----------------------*/
+
+
+#galerie-text
+{
+	width:75%;
+	margin:auto;
+	font-size: 120%;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#video, #galerie
+{
+	margin-bottom: 100px;
+}
+
+/* https://www.w3schools.com/howto/howto_css_responsive_iframes.asp */
+.responsive-iframe-container
+{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding-top: 66.66%;
+}
+
+.responsive-iframe
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*---------------------- ENDE GALERIE -------------------------*/
+
+#impressum
+{
+	text-align: center;
+	margin-top:50px;
+	
+}
+
+#impressum-text
+{
+	width:50%;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+#anfahrt-maps-box
+{
+	width:95%;
+	margin:auto;
+	margin-bottom: 100px;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+}
+
+h2
+{
+	font-size: 120%;
+}
+
+
+
+/* -------------------- ENDE CONTENT ---------------------------*/
+#sechs
+{
+	background: #191919;
+}
+/* -------------------------- ANFANG FOOTER ---------------------------*/
+
+#footer
+{
+	width: 300px;
+	text-align: center;
+	font-size: 120%;
+	display: flex;
+	justify-content: space-between;
+	margin:auto;
+	line-height: 100px;
+}
+
+
+/* -------------------------- ENDE FOOTER -------------------------------*/
+a
+{
+	color:#c3c3c3;
+	text-decoration:none;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width:800px) 
+{
+	#wrapper
+	{
+		width:95%
+	}	
+
+	img
+	{
+		max-width:100%;
+		height:auto;
+	}
+
+	.hide-on-mobile
+	{
+		display: none;
+	}
+	
+}
+
+@media screen and (min-width:800px)
+{
+	.hide-on-desktop
+	{
+		display: none;
+	}
+
+	#video, #galerie
+	{
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+}
