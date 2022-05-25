@@ -33,19 +33,21 @@ body
 	margin: auto;
 	text-align: center;
 	padding:40px;
-	padding-bottom: 0;
+	padding-bottom: 20px;
 }
 
 h1
 {
 	font-family: 'Bodoni Moda', serif;
 	font-size: 250%;
+	font-weight: 300;
 	margin-bottom: 0px;
 }
 
 h3
 {
 	font-size: 130%;
+	font-weight: 300;
 	margin-top: 0px;
 	font-family: 'Bodoni Moda', serif;
 }
@@ -103,6 +105,16 @@ h3
 	font-family: 'Bodoni Moda', serif;
 	font-size: 200%;
 	padding:10px;
+}
+
+.indextext2
+{
+	width:75%;
+	margin:auto;
+	font-size: 120%;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 70px;
 }
 
 #index-pics-box
